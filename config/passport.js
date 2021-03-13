@@ -11,8 +11,6 @@ var params = {
     jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken()
 }
 
-
-
 passport.use(
     new Strategy(params, async (payload, done) => {
         try{
